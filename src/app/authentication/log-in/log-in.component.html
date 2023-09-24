@@ -1,0 +1,41 @@
+<div class="bg-container">
+  <div class="form-container">
+    <mat-card>
+      <mat-card-header>
+        <div class="logo-container">
+          <img class="logo" src="https://cdn.discordapp.com/attachments/1142291485929259069/1154443565481590856/image.png" alt="logo">
+          <mat-card-title>GreenGrow</mat-card-title>
+        </div>
+      </mat-card-header>
+
+      <mat-card-content>
+        <div class="btn-container">
+          <a mat-flat-button color="basic" routerLink="/accounts/login" routerLinkActive="active" type="button">
+            Iniciar Sesion
+          </a>
+          <a mat-flat-button color="basic" routerLink="/accounts/register" routerLinkActive="active" type="button">
+            Registrar
+          </a>
+        </div>
+        <form [formGroup]="loginForm" (submit)="submitForm()">
+          <mat-form-field appearance="fill">
+            <mat-label>Correo</mat-label>
+            <input matInput type="text" spellcheck="false" [formControl]="loginForm.controls.email">
+            <mat-error *ngIf="loginForm.controls.email.invalid"> {{getErrorEmailMessage()}} </mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Contrasena</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" spellcheck="false"
+              [formControl]="loginForm.controls.password">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+            <mat-error *ngIf="loginForm.controls.password.invalid">{{getErrorPasswordMessage()}}</mat-error>
+          </mat-form-field>
+          <button mat-flat-button color="basic" type="submit" (click)="submitForm()" [disabled]="loginForm.invalid">Ingresar</button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+<div class="page-management">
+  <div class="calendar-div">
+    <mat-card class="calendar-card">
+      <!-- <mat-calendar [(selected)]="selected"></mat-calendar> -->
+      <mat-calendar [selected]="selected" (selectedChange)="handleDateChange($event)"></mat-calendar>
+    </mat-card>
+  </div>
+  <div class="event-management">
+    <div class="title">
+      <mat-icon>calendar_today</mat-icon>
+      <span>{{selected | date:'fullDate'}}</span>
+    </div>
+    <form (submit)="onSubmit()" #eventForm="ngForm">
+      <mat-form-field>
+        <input matInput placeholder="Date of the event" name="date" disabled [value]="selected | date">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Write a NEW event" name="description" required [(ngModel)]="eventData.description">
+      </mat-form-field>
+      <button mat-button color="basic">Add</button>
+    </form>
+    <!-- <div class="events-per-day"> -->
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <ng-comtainer matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef>Done?</th>
+        <td mat-cell *matCellDef="let element">
+          <mat-checkbox (click)="deleteEvent(element.id)"></mat-checkbox>
+        </td>
+      </ng-comtainer>
+      <!-- <ng-comtainer matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef>#id</th>
+          <td mat-cell *matCellDef="let element">{{element.id}}</td>
+        </ng-comtainer> -->
+      <ng-comtainer matColumnDef="description">
+        <th mat-header-cell *matHeaderCellDef>What's next on my damn list?</th>
+        <td mat-cell *matCellDef="let element">{{element.description}}</td>
+      </ng-comtainer>
+      <!-- <ng-comtainer matColumnDef="actions">
+          <th mat-header-cell *matHeaderCellDef>Actions</th>
+          <td mat-cell *matCellDef="let element">
+            <button (click)="deleteEvent(element.id)"><mat-icon>delete</mat-icon></button>
+          </td>
+        </ng-comtainer> -->
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns" [ngClass]="{'editable-row': eventData.id == row.id}">
+      </tr>
+    </table>
+    <mat-paginator [pageSize]="5" [pageSizeOptions]="[5,10,15]" showFirstLastButtons=""></mat-paginator>
+    <!-- </div> -->
+  </div>
+</div>
+
+<!-- <p>Selected date: {{selected}}</p> -->

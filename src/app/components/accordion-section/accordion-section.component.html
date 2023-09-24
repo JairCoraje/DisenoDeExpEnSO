@@ -1,0 +1,124 @@
+<mat-accordion>
+  <mat-expansion-panel style="background: rgb(33, 33, 33); color: white; border-bottom: 2px solid rgb(255, 255, 255);">
+    <mat-expansion-panel-header>
+      <mat-panel-title style="color: rgb(255, 255, 255)">
+        Land Type
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    {{plant.info_land_type}}
+    <br><br>
+    <div class="ph-container">
+      <div class="ph">
+          <div *ngFor="let ph of indexPh" class="index-ph">
+              <div [style.background-color]="ph.color" #panelIndexPh></div>
+              <p>{{ph.index}}</p>
+          </div>
+          <div class="current-ph"
+          [ngStyle]="{'left': 'calc((100% * ' + plant.ph + '/15) - 4px)'}"
+          ></div>
+      </div>
+      <div class="ph-type">
+          <h4>ACID</h4>
+          <h4>ALKALINE</h4>
+      </div>
+    </div>
+    <br>
+    <br>
+
+  </mat-expansion-panel>
+
+  <mat-expansion-panel style="background: rgb(33, 33, 33); color: white; border-bottom: 2px solid rgb(255, 255, 255);">
+    <mat-expansion-panel-header>
+      <mat-panel-title style="color: rgb(255, 255, 255)">
+        Planting distance between plants
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    {{plant.info_distance_between}}
+    <br><br>
+    <div class="img-move-wrapper">
+      <img src="assets/images/image_8.png">
+      <p style="color: white;">&#60;----- {{plant.distance_between}} -----></p>
+      <img class="right" src="assets/images/image_8.png">
+    </div>
+    <div class="sep">
+      <p style="margin-left: 33px;">&#8593;</p>
+      <p style="margin-left: auto;">&#8593;</p>
+    </div>
+    <div class="sep">
+      <p style="margin-left: 10px;">0.8 a 1m</p>
+      <p style="margin-left: auto;">0.8 a 1m</p>
+    </div>
+    <div class="sep">
+      <p style="margin-left: 33px;">&#8595;</p>
+      <p style="margin-left: auto;">&#8595;</p>
+    </div>
+    <div class="img-move-wrapper">
+      <img src="assets/images/image_8.png">
+      <p style="color: white;">&#60;----- 40 a 60cm -----></p>
+      <img class="right" src="assets/images/image_8.png">
+    </div>
+
+  </mat-expansion-panel>
+
+  <mat-expansion-panel style="background: rgb(33, 33, 33); color: white; border-bottom: 2px solid rgb(255, 255, 255);">
+    <mat-expansion-panel-header>
+      <mat-panel-title style="color: rgb(255, 255, 255)">
+        Ideal depth for planting
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    You can then sow 3-4 seeds in each hole at a depth of {{plant.depth}} and gently cover with soil.
+    You can water immediately after sowing. Cauliflower germinates best at an average temperature of {{plant.weather}}.
+    The seed needs to have optimal moisture levels to germinate.
+    <br><br>
+    <div class="img-move-wrapper">
+      <img class="img-move img-move-rect img-fluid" src="assets/images/Rectangle-94.png">
+      <img class="img-move img-move-bean img-fluid" src="assets/images/Vector-5.png">
+      <img class="img-fluid invisible d-none d-md-block mx-auto" src="assets/images/fondo1.png" alt="fondo">
+      <p style="margin-top: -22px;">&#8593;</p>
+      <p>0.5 a 1.5m</p>
+      <p style="margin-top: 22px;">&#8595;</p>
+    </div>
+
+  </mat-expansion-panel>
+
+
+  <mat-expansion-panel style="background: rgb(33, 33, 33); color: white; border-top: 2px solid rgb(255, 255, 255);border-bottom: 2px solid rgb(255, 255, 255);">
+    <mat-expansion-panel-header>
+      <mat-panel-title style="color: rgb(255, 255, 255)">
+        Weather Conditions
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    The crop develops well in regions with temperatures between {{plant.weather}}. Regarding altitude, it has been found
+    that cauliflower produces good quality inflorescence between 1,860 (Tapezco) and 2,900 meters above sea level
+    (San Juan de Chicuá), although the cultivar and the climate of the area will determine the success of the crop.
+    <br>
+    <br>
+    <div class="div-termometer">
+      <h1 class="temperature">{{plant.weather}}</h1>
+      <img class="termometer" src="assets/images/termometer.png" alt="termometro">
+      <progress class="progreso" max="50" value="15"></progress>
+    </div>
+  </mat-expansion-panel>
+  <mat-expansion-panel style="background: rgb(33, 33, 33); color: white; border-bottom: 2px solid rgb(255, 255, 255);">
+    <mat-expansion-panel-header>
+      <mat-panel-title style="color: rgb(255, 255, 255)">
+        Fertilization y Fumigation
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    Fertilization:
+    Fertilizing at the right time is crucial to getting the most out of your cauliflower crops. In general,
+    you should pay once every {{plant.intervale_fert}} weeks during periods of active growth. In the case of transplants,
+    pay once before the transplant and again two weeks after.
+    <br><br>
+    Fumigation:
+    This plant should be fumigated every {{plant.intervale_fumig}} weeks in order to isolate them from mosquitoes and other pests,
+    this by spraying the fumigation on the plant itself. On the other hand, drenching the soil with
+    insecticide can prevent the formation of larvae for a period of 7 weeks.
+    <br><br>
+    <div class="buttons-accordion">
+      <button mat-flat-button (click)="addEventFumig()">Generate dates of fumigation</button>
+      <button mat-flat-button (click)="addEventFert()">Generate dates of fertilization</button>
+    </div>
+
+  </mat-expansion-panel>
+</mat-accordion>

@@ -1,0 +1,212 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "username": "Josty",
+      "email": "example@gmail.com",
+      "password": "example123"
+    },
+    {
+      "username": "Marcelo",
+      "email": "example123@gmail.com",
+      "password": "example123",
+      "id": 1
+    },
+    {
+      "username": "Yamile",
+      "email": "example456@gmail.com",
+      "password": "example123",
+      "id": 2
+    }
+  ],
+  "plants": [
+    {
+      "id": 0,
+      "name": "Cauliflower",
+      "image": "https://cdn.britannica.com/27/78227-050-28A68F87/cauliflower-Head-colour-White-brown-cultivars.jpg",
+      "scientifistname": "Brassica oleracea var. botrytis",
+      "variety": "Brassica oleracea",
+      "infolandType": "Cauliflower is grown in a wide variety of soils. The best results are obtained in loamy, deep soils with a good content of organic matter. Cauliflower is very sensitive to soil acidity, it develops well in soils with a pH between 5.5 and 6.5.",
+      "ph": 5.5,
+      "infoDistanceBetween": "Planting distances vary according to the time of year in which it is planted; in the dry season it can be sown at 50 cm between plants and 60 cm between rows and in the rainy season it is advisable to widen the distance between rows to 80 cm.",
+      "distancePlants": "40-60 cm",
+      "infoIdealDepth": "You can then sow 3-4 seeds in each hole at a depth of 0.5-1.5 cm (0.2-0.6 inches) and gently cover with soil. You can water immediately after sowing. Cauliflower germinates best at an average temperature of 80°F (26°C). The seed needs to have optimal moisture levels to germinate.",
+      "depth": "0.5-1.5 m",
+      "infoWeatherConditions": "The crop develops well in regions with temperatures between 15 and 18ºC. Regarding altitude, it has been found that cauliflower produces good quality inflorescence between 1,860 (Tapezco) and 2,900 meters above sea level (San Juan de Chicuá), although the cultivar and the climate of the area will determine the success of the crop.",
+      "weather": "15° - 18° C",
+      "infoFertFumig": "Fertilizing at the right time is crucial to getting the most out of your cauliflower crops. In general, you should pay once every two weeks during periods of active growth. In the case of transplants, pay once before the transplant and again two weeks after. Fumigation: This plant should be fumigated every 3-5 weeks in order to isolate them from mosquitoes and other pests, this by spraying the fumigation on the plant itself. On the other hand, drenching the soil with insecticide can prevent the formation of larvae for a period of 7 weeks.",
+      "intervaleFert": 2,
+      "intervaleFumig": 3,
+      "savePlant": false
+    },
+    {
+      "id": 1,
+      "name": "Lettuce",
+      "image": "https://www.collinsdictionary.com/images/full/lettuce_124415023.jpg",
+      "scientifistname": "Brassica oleracea var. botrytis",
+      "variety": "Brassica oleracea",
+      "infolandType": "Cauliflower is grown in a wide variety of soils. The best results are obtained in loamy, deep soils with a good content of organic matter. Cauliflower is very sensitive to soil acidity, it develops well in soils with a pH between 5.5 and 6.5.",
+      "ph": 9,
+      "infoDistanceBetween": "Planting distances vary according to the time of year in which it is planted; in the dry season it can be sown at 50 cm between plants and 60 cm between rows and in the rainy season it is advisable to widen the distance between rows to 80 cm.",
+      "distancePlants": "40-60 cm",
+      "infoIdealDepth": "You can then sow 3-4 seeds in each hole at a depth of 0.5-1.5 cm (0.2-0.6 inches) and gently cover with soil. You can water immediately after sowing. Cauliflower germinates best at an average temperature of 80°F (26°C). The seed needs to have optimal moisture levels to germinate.",
+      "depth": "0.5-1.5 m",
+      "infoWeatherConditions": "The crop develops well in regions with temperatures between 15 and 18ºC. Regarding altitude, it has been found that cauliflower produces good quality inflorescence between 1,860 (Tapezco) and 2,900 meters above sea level (San Juan de Chicuá), although the cultivar and the climate of the area will determine the success of the crop.",
+      "weather": "15° - 18° C",
+      "infoFertFumig": "Fertilizing at the right time is crucial to getting the most out of your cauliflower crops. In general, you should pay once every two weeks during periods of active growth. In the case of transplants, pay once before the transplant and again two weeks after. Fumigation: This plant should be fumigated every 3-5 weeks in order to isolate them from mosquitoes and other pests, this by spraying the fumigation on the plant itself. On the other hand, drenching the soil with insecticide can prevent the formation of larvae for a period of 7 weeks.",
+      "intervaleFert": 1,
+      "intervaleFumig": 4,
+      "savePlant": true
+    },
+    {
+      "id": 2,
+      "name": "Potato",
+      "image": "https://thumbs.dreamstime.com/b/potatoe-4507668.jpg",
+      "scientifistname": "Brassica oleracea var. botrytis",
+      "variety": "Brassica oleracea",
+      "infolandType": "Cauliflower is grown in a wide variety of soils. The best results are obtained in loamy, deep soils with a good content of organic matter. Cauliflower is very sensitive to soil acidity, it develops well in soils with a pH between 5.5 and 6.5.",
+      "ph": 5.5,
+      "infoDistanceBetween": "Planting distances vary according to the time of year in which it is planted; in the dry season it can be sown at 50 cm between plants and 60 cm between rows and in the rainy season it is advisable to widen the distance between rows to 80 cm.",
+      "distancePlants": "40-60 cm",
+      "infoIdealDepth": "You can then sow 3-4 seeds in each hole at a depth of 0.5-1.5 cm (0.2-0.6 inches) and gently cover with soil. You can water immediately after sowing. Cauliflower germinates best at an average temperature of 80°F (26°C). The seed needs to have optimal moisture levels to germinate.",
+      "depth": "0.5-1.5 m",
+      "infoWeatherConditions": "The crop develops well in regions with temperatures between 15 and 18ºC. Regarding altitude, it has been found that cauliflower produces good quality inflorescence between 1,860 (Tapezco) and 2,900 meters above sea level (San Juan de Chicuá), although the cultivar and the climate of the area will determine the success of the crop.",
+      "weather": "15° - 18° C",
+      "infoFertFumig": "Fertilizing at the right time is crucial to getting the most out of your cauliflower crops. In general, you should pay once every two weeks during periods of active growth. In the case of transplants, pay once before the transplant and again two weeks after. Fumigation: This plant should be fumigated every 3-5 weeks in order to isolate them from mosquitoes and other pests, this by spraying the fumigation on the plant itself. On the other hand, drenching the soil with insecticide can prevent the formation of larvae for a period of 7 weeks.",
+      "intervaleFert": 2,
+      "intervaleFumig": 3,
+      "savePlant": true
+    },
+    {
+      "id": 3,
+      "name": "Tomatoe",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bright_red_tomato_and_cross_section02.jpg/640px-Bright_red_tomato_and_cross_section02.jpg",
+      "scientifistname": "Brassica oleracea var. botrytis",
+      "variety": "Brassica oleracea",
+      "infolandType": "Cauliflower is grown in a wide variety of soils. The best results are obtained in loamy, deep soils with a good content of organic matter. Cauliflower is very sensitive to soil acidity, it develops well in soils with a pH between 5.5 and 6.5.",
+      "ph": 5.5,
+      "infoDistanceBetween": "Planting distances vary according to the time of year in which it is planted; in the dry season it can be sown at 50 cm between plants and 60 cm between rows and in the rainy season it is advisable to widen the distance between rows to 80 cm.",
+      "distancePlants": "40-60 cm",
+      "infoIdealDepth": "You can then sow 3-4 seeds in each hole at a depth of 0.5-1.5 cm (0.2-0.6 inches) and gently cover with soil. You can water immediately after sowing. Cauliflower germinates best at an average temperature of 80°F (26°C). The seed needs to have optimal moisture levels to germinate.",
+      "depth": "0.5-1.5 m",
+      "infoWeatherConditions": "The crop develops well in regions with temperatures between 15 and 18ºC. Regarding altitude, it has been found that cauliflower produces good quality inflorescence between 1,860 (Tapezco) and 2,900 meters above sea level (San Juan de Chicuá), although the cultivar and the climate of the area will determine the success of the crop.",
+      "weather": "15° - 18° C",
+      "infoFertFumig": "Fertilizing at the right time is crucial to getting the most out of your cauliflower crops. In general, you should pay once every two weeks during periods of active growth. In the case of transplants, pay once before the transplant and again two weeks after. Fumigation: This plant should be fumigated every 3-5 weeks in order to isolate them from mosquitoes and other pests, this by spraying the fumigation on the plant itself. On the other hand, drenching the soil with insecticide can prevent the formation of larvae for a period of 7 weeks.",
+      "intervaleFert": 2,
+      "intervaleFumig": 3,
+      "savePlant": false
+    },
+    {
+      "id": 4,
+      "name": "Lemon",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Lemon.jpg/1024px-Lemon.jpg",
+      "scientifistname": "Brassica oleracea var. botrytis",
+      "variety": "Brassica oleracea",
+      "infolandType": "Cauliflower is grown in a wide variety of soils. The best results are obtained in loamy, deep soils with a good content of organic matter. Cauliflower is very sensitive to soil acidity, it develops well in soils with a pH between 5.5 and 6.5.",
+      "ph": 5.5,
+      "infoDistanceBetween": "Planting distances vary according to the time of year in which it is planted; in the dry season it can be sown at 50 cm between plants and 60 cm between rows and in the rainy season it is advisable to widen the distance between rows to 80 cm.",
+      "distancePlants": "40-60 cm",
+      "infoIdealDepth": "You can then sow 3-4 seeds in each hole at a depth of 0.5-1.5 cm (0.2-0.6 inches) and gently cover with soil. You can water immediately after sowing. Cauliflower germinates best at an average temperature of 80°F (26°C). The seed needs to have optimal moisture levels to germinate.",
+      "depth": "0.5-1.5 m",
+      "infoWeatherConditions": "The crop develops well in regions with temperatures between 15 and 18ºC. Regarding altitude, it has been found that cauliflower produces good quality inflorescence between 1,860 (Tapezco) and 2,900 meters above sea level (San Juan de Chicuá), although the cultivar and the climate of the area will determine the success of the crop.",
+      "weather": "15° - 18° C",
+      "infoFertFumig": "Fertilizing at the right time is crucial to getting the most out of your cauliflower crops. In general, you should pay once every two weeks during periods of active growth. In the case of transplants, pay once before the transplant and again two weeks after. Fumigation: This plant should be fumigated every 3-5 weeks in order to isolate them from mosquitoes and other pests, this by spraying the fumigation on the plant itself. On the other hand, drenching the soil with insecticide can prevent the formation of larvae for a period of 7 weeks.",
+      "intervaleFert": 2,
+      "intervaleFumig": 3,
+      "savePlant": true
+    },
+    {
+      "id": 5,
+      "name": "Brusels",
+      "image": "https://www.elhuertourbano.net/wp-content/uploads/col-bruselas-recolectado-1000x640.jpg",
+      "scientifistname": "Brassica oleracea var. botrytis",
+      "variety": "Brassica oleracea",
+      "infolandType": "Cauliflower is grown in a wide variety of soils. The best results are obtained in loamy, deep soils with a good content of organic matter. Cauliflower is very sensitive to soil acidity, it develops well in soils with a pH between 5.5 and 6.5.",
+      "ph": 5.5,
+      "infoDistanceBetween": "Planting distances vary according to the time of year in which it is planted; in the dry season it can be sown at 50 cm between plants and 60 cm between rows and in the rainy season it is advisable to widen the distance between rows to 80 cm.",
+      "distancePlants": "40-60 cm",
+      "infoIdealDepth": "You can then sow 3-4 seeds in each hole at a depth of 0.5-1.5 cm (0.2-0.6 inches) and gently cover with soil. You can water immediately after sowing. Cauliflower germinates best at an average temperature of 80°F (26°C). The seed needs to have optimal moisture levels to germinate.",
+      "depth": "0.5-1.5 m",
+      "infoWeatherConditions": "The crop develops well in regions with temperatures between 15 and 18ºC. Regarding altitude, it has been found that cauliflower produces good quality inflorescence between 1,860 (Tapezco) and 2,900 meters above sea level (San Juan de Chicuá), although the cultivar and the climate of the area will determine the success of the crop.",
+      "weather": "15° - 18° C",
+      "infoFertFumig": "Fertilizing at the right time is crucial to getting the most out of your cauliflower crops. In general, you should pay once every two weeks during periods of active growth. In the case of transplants, pay once before the transplant and again two weeks after. Fumigation: This plant should be fumigated every 3-5 weeks in order to isolate them from mosquitoes and other pests, this by spraying the fumigation on the plant itself. On the other hand, drenching the soil with insecticide can prevent the formation of larvae for a period of 7 weeks.",
+      "intervaleFert": 2,
+      "intervaleFumig": 3,
+      "savePlant": false
+    },
+    {
+      "id": 6,
+      "name": "Cabagge",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3ZTyj3ZOwD6SEEXeRRYNM7mteOr50KEF2dHqKOAiFnoElcyeh8OZT52nKFHbZYtW0wGk&usqp=CAU",
+      "scientifistname": "Brassica oleracea var. botrytis",
+      "variety": "Brassica oleracea",
+      "infolandType": "Cauliflower is grown in a wide variety of soils. The best results are obtained in loamy, deep soils with a good content of organic matter. Cauliflower is very sensitive to soil acidity, it develops well in soils with a pH between 5.5 and 6.5.",
+      "ph": 5.5,
+      "infoDistanceBetween": "Planting distances vary according to the time of year in which it is planted; in the dry season it can be sown at 50 cm between plants and 60 cm between rows and in the rainy season it is advisable to widen the distance between rows to 80 cm.",
+      "distancePlants": "40-60 cm",
+      "infoIdealDepth": "You can then sow 3-4 seeds in each hole at a depth of 0.5-1.5 cm (0.2-0.6 inches) and gently cover with soil. You can water immediately after sowing. Cauliflower germinates best at an average temperature of 80°F (26°C). The seed needs to have optimal moisture levels to germinate.",
+      "depth": "0.5-1.5 m",
+      "infoWeatherConditions": "The crop develops well in regions with temperatures between 15 and 18ºC. Regarding altitude, it has been found that cauliflower produces good quality inflorescence between 1,860 (Tapezco) and 2,900 meters above sea level (San Juan de Chicuá), although the cultivar and the climate of the area will determine the success of the crop.",
+      "weather": "15° - 18° C",
+      "infoFertFumig": "Fertilizing at the right time is crucial to getting the most out of your cauliflower crops. In general, you should pay once every two weeks during periods of active growth. In the case of transplants, pay once before the transplant and again two weeks after. Fumigation: This plant should be fumigated every 3-5 weeks in order to isolate them from mosquitoes and other pests, this by spraying the fumigation on the plant itself. On the other hand, drenching the soil with insecticide can prevent the formation of larvae for a period of 7 weeks.",
+      "intervaleFert": 2,
+      "intervaleFumig": 3,
+      "savePlant": false
+    }
+  ],
+  "events": [
+    {
+      "id": 8,
+      "date": "2022-11-21T05:00:00.000Z",
+      "description": "2° Fertilization of Cauliflower"
+    },
+    {
+      "id": 9,
+      "date": "2022-11-21T05:00:00.000Z",
+      "description": "1° Fumigation of Cauliflower"
+    },
+    {
+      "id": 10,
+      "date": "2022-12-05T05:00:00.000Z",
+      "description": "2° Fumigation of Cauliflower"
+    },
+    {
+      "id": 11,
+      "date": "2022-10-24T05:00:00.000Z",
+      "description": "1° Fertilization of Lettuce"
+    },
+    {
+      "id": 12,
+      "date": "2022-10-31T05:00:00.000Z",
+      "description": "2° Fertilization of Lettuce"
+    },
+    {
+      "id": 13,
+      "date": "2022-10-24T05:00:00.000Z",
+      "description": "1° Fertilization of Lemon"
+    },
+    {
+      "id": 14,
+      "date": "2022-11-07T05:00:00.000Z",
+      "description": "2° Fertilization of Lemon"
+    }
+  ],
+  "plot": [
+    {
+      "id": 1,
+      "plantName": "Lettuce",
+      "size": 14,
+      "quantity": 16,
+      "latitude": -11.61412,
+      "longitude": -77.230083
+    },
+    {
+      "id": 2,
+      "plantName": "Cauliflower",
+      "size": 20,
+      "quantity": 24,
+      "latitude": -11.61412,
+      "longitude": -77.230083
+    }
+  ]
+}

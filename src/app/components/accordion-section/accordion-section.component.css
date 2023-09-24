@@ -1,0 +1,158 @@
+.mat-accordion{
+  display: grid;
+  margin: auto;
+  width: 90%;
+  margin-top: 2%;
+}
+
+.buttons-accordion{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  gap: 8%;
+}
+
+.mat-flat-button{
+  margin:10px;
+  width: 50%;
+  background-color: rgba(47, 153, 47, 1);
+  color: white;
+  font-style: bold;
+}
+
+.div-termometer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.termometer{
+  grid-column: 3/4;
+  grid-row: 1;
+  justify-self: start;
+  width: 20vw;
+  height: 40vh;
+  position: static;
+}
+
+.temperature{
+  grid-column: 2/3;
+  align-self: center;
+  justify-self: center;
+  font-size: 50px;
+}
+
+.progreso{
+  grid-column: 3/4;
+  grid-row: 1;
+  position: relative;
+  transform: rotate(270deg);
+  justify-self: center;
+  align-self: center;
+}
+
+/* Land Type */
+.ph-container {
+  background-color: #393939;
+  padding: 15px 10px;
+  border-radius: 13px;
+}
+
+.ph {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  gap: 5px;
+  position: relative;
+}
+
+.index-ph div {
+  border-radius: 10px;
+  height: 100px;
+}
+.index-ph p {
+  margin-bottom: 0;
+  margin-top: 10px;
+  text-align: center;
+}
+.ph-type {
+  display: flex;
+  justify-content: space-between;
+}
+.ph-type h4 {
+  margin-bottom: 0;
+}
+.current-ph {
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 10px;
+  height: 110px;
+  top: -5px;
+  width: calc((100% / 15) + 2px);
+}
+
+@media (max-width: 700px){
+  .buttons-accordion{
+    display: flex;
+    flex-direction: column;
+  }
+  .mat-flat-button{
+    width: fit-content;
+  }
+  .termometer{
+    grid-column: 3/4;
+    justify-self: start;
+    width: 40vw;
+    height: 20vh;
+  }
+  .temperature{
+    font-size: 20px;
+    width: 20vw;
+    text-align: center;
+  }
+  .div-termometer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   }
+}
+
+/* Planting Distance */
+
+.sep{
+  display: flex;
+  color: white;
+  margin: auto;
+}
+.img-move-wrapper {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  margin: auto;
+}
+.img-move-wrapper p{
+  font-size: 1rem;
+  color: white;
+  position: absolute;
+  top: 39%;
+  left: 46.5%;
+  transform: translate(-50%,-50%);
+}
+.right{
+  float: right;
+}
+
+/* Ideal Depth */
+@media (min-width: 0px){
+  .img-move {
+  position: absolute;
+  width: 23.5%;
+  left: 35%;
+  }
+  .img-move-rect {
+  left: 35%;
+  bottom: 20%;
+  }
+  .img-move-bean {
+  left: 44.5%;
+  bottom: 22%;
+  width: 5%;
+  }
+}

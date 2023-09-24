@@ -1,0 +1,11 @@
+<h1 *ngIf="plant.saved; else elseTitle" mat-dialog-title>Delete Plant</h1>
+<ng-template #elseTitle><h1>Save Plant</h1></ng-template>
+<mat-dialog-content class="text">
+    <h2 *ngIf="plant.saved; else elseBlock">Do you want unsave {{plant.name}}?</h2>
+    <ng-template #elseBlock>Do you want save {{plant.name}}?</ng-template>
+</mat-dialog-content>
+
+<div mat-dialog-actions style="display: grid; grid-template-columns: 1fr 1fr">
+    <button mat-raised-button mat-dialog-close (click)="savePlant()" style="background-color: #148414">Yes</button>
+    <button mat-raised-button (click)="closeClick()" style="background-color: #ff0000">No</button>
+</div>

@@ -1,0 +1,8 @@
+<mat-dialog-content class="text">
+    <h1 mat-dialog-title style="text-align: center;">¿Seguro que quieres cerrar la sesión?</h1>
+</mat-dialog-content>
+
+<div mat-dialog-actions style="display: grid; grid-template-columns: 1fr 1fr;">
+    <button mat-raised-button (click)="closeClick()">Cancelar</button>
+    <button mat-raised-button mat-dialog-close routerLink="/" style="background-color:#ff0000;">Sign Off</button>
+</div>

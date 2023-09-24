@@ -1,0 +1,17 @@
+<div class="input-wrapper">
+  <input type="search" placeholder="  Search for plants" [(ngModel)]="input" (input)="Search()" class="input">
+  <mat-icon class="input-icon">search</mat-icon>
+</div>
+<h2>Bienvenido</h2>
+<p>{{messageSubtitle}}</p>
+<div class="cards">
+  <mat-card *ngFor="let plant of plants" class="example-card">
+    <img mat-card-image [src]="plant.image" alt="Photo of plant"
+         class="img-card">
+    <mat-card-title>{{plant.name}}</mat-card-title>
+    <mat-card-actions>
+      <button mat-button class="button-details" [routerLink]="['/details', plant.id]">Ver detalles</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+

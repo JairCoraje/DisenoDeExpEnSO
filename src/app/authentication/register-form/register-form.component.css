@@ -1,0 +1,108 @@
+.bg-container {
+  width: 100%;
+  height: 100%;
+  background-color:#005C00;
+  display: grid;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 0;
+  justify-self: center;
+  align-self: center;
+}
+
+mat-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  max-width: 32rem;
+  margin: 0 1rem;
+  padding: 2rem 0;
+  border-radius:20px;
+  background-color: #4EA93B;
+}
+
+mat-card-header {
+  flex-direction: column;
+  background-color: #4EA93B;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.logo-container img {
+  width: 6rem;
+  border-radius: 9999px;
+}
+
+.logo-container mat-card-title {
+  margin-left: 1rem;
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+mat-card-content {
+  margin: 0 2rem;
+}
+
+mat-card-content form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+mat-card-content form button[type=submit] {
+  background: rgb(47, 153, 47);
+  margin-top: 1rem;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:rgb(53, 53, 53) ;
+  margin: 1rem 0;
+  padding: .25rem;
+  border-radius: 6px;
+}
+
+.btn-container a {
+  width: 100%;
+}
+
+.btn-container a.active {
+  background: rgb(47, 153, 47);
+}
+
+.btn-container > * + * {
+  margin-left: .25rem;
+}
+
+@media (max-width: 599.98px) {
+  mat-card {
+    padding: 1rem 0;
+  }
+
+  mat-card-content {
+    margin: 1rem;
+  }
+
+  .logo-container {
+    flex-direction: column;
+  }
+
+  .logo-container mat-card-title {
+    margin-top: 1rem;
+    margin-left: 0;
+    font-size: 2.5rem;
+  }
+}

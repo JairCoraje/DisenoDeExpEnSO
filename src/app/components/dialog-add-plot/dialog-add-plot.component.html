@@ -1,0 +1,31 @@
+<h1 mat-dialog-title>Add Plot</h1>
+<mat-dialog-content class="text">
+  <form [formGroup]='newPlotForm' (submit)="submitForm()">
+    <mat-form-field appearance="fill">
+      <mat-label>NAME of the plant</mat-label>
+      <input matInput type="text" spellcheck="false" [formControl]="newPlotForm.controls.plantName">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>SIZE of the plot in m<sup>2</sup></mat-label>
+      <input matInput type="number" spellcheck="false" [formControl]="newPlotForm.controls.size">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>QUANTITY of plants on the plot</mat-label>
+      <input matInput type="number" spellcheck="false" [formControl]="newPlotForm.controls.quantity">
+    </mat-form-field>
+    <h3>Location info:</h3>
+    <mat-form-field appearance="fill">
+      <mat-label>LATITUDE</mat-label>
+      <input matInput type="text" spellcheck="false" [formControl]="newPlotForm.controls.latitude">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>LONGITUDE</mat-label>
+      <input matInput type="text" spellcheck="false" [formControl]="newPlotForm.controls.longitude">
+    </mat-form-field>
+    <p>To know your latitude and longitude, you can use <a href="www.googlemaps.com" style="color: brown;">Google Maps</a></p>
+    <div mat-dialog-actions style="display: grid; grid-template-columns: 1fr 1fr;">
+      <button mat-raised-button mat-dialog-close>Cancel</button>
+      <button mat-flat-button style="background-color: #148414;" type="submit" [disabled]="newPlotForm.invalid">Add Plot</button>
+    </div>
+  </form>
+</mat-dialog-content>

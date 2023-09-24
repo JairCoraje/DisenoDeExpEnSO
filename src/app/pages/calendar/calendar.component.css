@@ -1,0 +1,62 @@
+.page-management{
+  display: flex;
+  align-content: space-around;
+  margin: 0;
+}
+
+.page-management > * + * {
+  margin-left: 1rem;
+}
+
+.calendar-div {
+  width: 50%;
+  flex-shrink: 0;
+}
+
+.calendar-card {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.event-management {
+  width: 50%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+span {
+  font-size: large;
+}
+
+input {
+  margin-top: 0;
+}
+
+table {
+  width: 100%;
+}
+
+button {
+  background: rgb(47, 153, 47);
+  margin-left: 1rem;
+}
+
+@media(max-width: 959.98px) {
+  .page-management {
+    flex-direction: column;
+  }
+
+  .calendar-div, .event-management {
+    width: 100%;
+  }
+
+  .page-management > * + * {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}

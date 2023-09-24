@@ -1,0 +1,23 @@
+<div>
+  <div class="info">
+    <h1 class="head-details">Detalles de {{plant.name}}</h1>
+    <div class="subtitles">
+      <h1 class="sub-text">Nombre cientifico: {{plant.scientifist_name}}</h1>
+      <h1 class="sub-text">Variedad: {{plant.variety}}</h1>
+    </div>
+  </div>
+  <div class="imgs">
+    <img [src]="plant.image" alt="plant image">
+    <img [src]="plant.image" alt="plant image">
+  </div>
+  <app-accordion-section [id]="plant.id"></app-accordion-section>
+
+  <div class="buttons-retadd">
+    <button mat-flat-button style="background-color:rgb(32, 31, 31); color: white;" routerLink="/plants"> return to</button>
+    <button *ngIf="plant.saved; else elseBlock" mat-flat-button (click)="showDialog()" id="red">Delete Plant</button>
+    <ng-template #elseBlock><button mat-flat-button (click)="showDialog()" id="green">Add Plant</button></ng-template>
+
+  </div>
+
+</div>
+

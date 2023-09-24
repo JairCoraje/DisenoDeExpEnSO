@@ -1,0 +1,65 @@
+<mat-toolbar class="mat-elevation-z8">
+  <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+    <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+    <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+  </button>
+  GreenGrow: Manage your planting
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+    <img class="logo mat-elevation-z8" src="https://cdn.discordapp.com/attachments/1142291485929259069/1154443565481590856/image.png" />
+
+    <h3 class="name">GreenGrow</h3>
+    <br />
+    <div style="display: grid; grid-template-rows: 1fr 3fr; height: 50vh;">
+      <div>
+        <button mat-button class="menu-button" routerLink="/plants">
+          <mat-icon>local_florist</mat-icon>
+          <span>Mis plantas</span>
+        </button>
+        <button mat-button class="menu-button" routerLink="/calendar">
+          <mat-icon>calendar_today</mat-icon>
+          <span>Calendario</span>
+        </button>
+        <button mat-button class="menu-button" routerLink="/plots">
+          <mat-icon>account_balance_wallet</mat-icon>
+          <span>Mis parcelas</span>
+        </button>
+        <button mat-button class="menu-button" routerLink="/forecast">
+          <mat-icon>cloud_queue</mat-icon>
+          <span>Pronostico</span>
+        </button>
+      </div>
+      <div style="align-self: end; justify-self: start;">
+        <button mat-button (click)="menuTrigger.openMenu()">
+          <div #menuTrigger="matMenuTrigger" [matMenuTriggerFor]="Session"></div>
+          <div style="display: grid; grid-template-columns: 1fr 2fr; width: fit-content; height: 7vh;">
+            <div style="justify-self: center; align-self: center;">
+              <mat-icon>account_circle</mat-icon>
+            </div>
+            <div style="display: grid; justify-self: center; align-self: center;">
+              <span style="margin-bottom: -10px">User Name</span>
+              <span style="margin-top: -10px">@usertag</span>
+            </div>
+          </div>
+        </button>
+          <mat-menu #Session="matMenu" [overlapTrigger]="false">
+            <button mat-menu-item [matMenuTriggerFor]="Profile">Profile Settings</button>
+            <button mat-menu-item (click)="openDialogSignOff()">Sign Off</button>
+          </mat-menu>
+          <mat-menu #Profile="matMenu" yPosition="above">
+            <button mat-menu-item (click)="openDialogChangeEmail()">Change Email address</button>
+            <button mat-menu-item (click)="openDialogChangePassword()">Change password</button>
+          </mat-menu>
+      </div>
+    </div>
+   
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z8">
+      <ng-content></ng-content>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
